@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blood Money — Play Online | Official Site</title>
+	<meta name="description" content="Play Blood Money online instantly. Enjoy a soft pink, Apple-inspired, modern, responsive experience with glassmorphism, gradients, and smooth motion.">
+	<link rel="canonical" href="https://bloodmoney.pics/">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Blood Money">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Blood Money — Play Online | Official Site">
+	<meta property="og:description" content="Play Blood Money online with a soft pink, Apple-inspired design.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://bloodmoney.pics/">
+	<meta property="og:image" content="https://bloodmoney.pics/og-image.jpg">
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Blood Money — Play Online | Official Site">
+	<meta name="twitter:description" content="Play Blood Money online with a soft pink, Apple-inspired design.">
+	<meta name="twitter:image" content="https://bloodmoney.pics/og-image.jpg">
+
+	<!-- Favicon (optional) -->
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23FF2D55'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='28' fill='white' font-family='Arial,sans-serif'%3EB%3C/text%3E%3C/svg%3E">
+
+	<!-- Tailwind CSS CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Tailwind Config (Soft Pink, Apple-inspired) -->
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						primary: '#FF2D55',     // Apple pink/red
+						primaryDeep: '#E61E4D', // deeper for hover
+						secondary: '#8E8E93',   // muted gray
+						accent: '#FF375F',      // accent pink
+						dark: '#3A2A2E',        // warm dark for text when needed
+						light: '#FFF1F5',       // soft pink background (rose-50 vibe)
+						ink: '#4A3040'          // warm ink for text
+					},
+					fontFamily: {
+						sans: ['-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Arial','sans-serif']
+					},
+					boxShadow: {
+						'glow': '0 10px 30px rgba(255,45,85,0.25)'
+					},
+					backdropBlur: {
+						'xs': '4px'
+					}
+				}
+			}
+		}
+	</script>
+
+	<!-- Custom Utilities -->
+	<style type="text/tailwindcss">
+		@layer utilities {
+			.glass {
+				@apply bg-white/70 backdrop-blur-md border border-white/40;
+			}
+			.glass-soft {
+				@apply bg-white/60 backdrop-blur-xs border border-white/30;
+			}
+			.btn {
+				@apply inline-flex items-center justify-center px-4 py-2 rounded-xl font-medium transition-all duration-200;
+			}
+			.btn-primary {
+				@apply btn bg-primary text-white hover:bg-primaryDeep hover:-translate-y-0.5 hover:shadow-glow;
+			}
+			.btn-ghost {
+				@apply btn glass-soft text-ink hover:bg-white/80;
+			}
+			.grad-sky {
+				/* Soft pink gradients + subtle light */
+				background:
+					radial-gradient(1100px 520px at 85% -10%, rgba(255,45,85,0.20), transparent 60%),
+					radial-gradient(900px 520px at -10% 10%, rgba(255,110,140,0.18), transparent 60%),
+					linear-gradient(180deg, #FFF7FA 0%, #FFFFFF 60%);
+			}
+			/* Optional dark mode tone (rose/magenta night) */
+			.dark .grad-sky {
+				background:
+					radial-gradient(1100px 520px at 85% -10%, rgba(255,45,85,0.20), transparent 60%),
+					radial-gradient(900px 520px at -10% 10%, rgba(255,110,140,0.16), transparent 60%),
+					linear-gradient(180deg, #22151B 0%, #1A0F14 60%);
+			}
+		}
+	</style>
+
+	<!-- Schema.org (VideoGame + WebSite) -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"name": "Blood Money",
+		"url": "https://bloodmoney.pics/",
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": "https://bloodmoney.pics/?q={search_term_string}",
+			"query-input": "required name=search_term_string"
+		}
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "VideoGame",
+		"name": "Blood Money",
+		"url": "https://bloodmoney.pics/",
+		"genre": "Action",
+		"playMode": "SinglePlayer",
+		"applicationCategory": "Game",
+		"operatingSystem": "Web",
+		"image": "https://bloodmoney.pics/og-image.jpg",
+		"description": "Play Blood Money online instantly in your browser with a soft pink, Apple-inspired design and smooth performance.",
+		"author": { "@type": "Organization", "name": "Blood Money" }
+	}
+	</script>
+</head>
+<body class="min-h-dvh text-ink bg-light antialiased">
+	<a href="#play" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:btn focus:btn-ghost">Skip to game</a>
+
+	<!-- Header -->
+	<header class="sticky top-0 z-40">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="mt-3 mb-4 rounded-2xl glass shadow-sm">
+				<div class="flex items-center justify-between px-4 py-3 sm:px-6">
+					<div class="flex items-center gap-2">
+						<div class="h-9 w-9 rounded-xl bg-primary grid place-items-center shadow-glow">
+							<i class="fa fa-diamond text-white" aria-hidden="true"></i>
+						</div>
+						<span class="font-semibold tracking-tight text-ink">Blood Money</span>
+					</div>
+
+					<button id="menuBtn" class="md:hidden btn-ghost" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</button>
+
+					<nav id="primaryNav" class="hidden md:flex items-center gap-2">
+						<a href="#overview" class="btn-ghost">Overview</a>
+						<a href="#play" class="btn-ghost">Play</a>
+						<a href="#details" class="btn-ghost">Details</a>
+						<a href="#faq" class="btn-ghost">FAQ</a>
+					</nav>
+				</div>
+
+				<!-- Mobile menu -->
+				<div id="mobilePanel" class="hidden md:hidden border-t border-white/30 px-4 py-3">
+					<div class="flex flex-col gap-2">
+						<a href="#overview" class="btn-ghost">Overview</a>
+						<a href="#play" class="btn-ghost">Play</a>
+						<a href="#details" class="btn-ghost">Details</a>
+						<a href="#faq" class="btn-ghost">FAQ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Hero -->
+	<section class="grad-sky">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+			<div class="text-center max-w-3xl mx-auto">
+				<h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-ink drop-shadow-sm">
+					Blood Money
+				</h1>
+				<p class="mt-4 text-lg sm:text-xl text-ink/70">
+					A fast, stylish browser game—jump in and play instantly.
+				</p>
+				<div class="mt-6 flex items-center justify-center gap-3">
+					<a href="#play" class="btn-primary">
+						<i class="fa fa-play-circle mr-2" aria-hidden="true"></i> Play Now
+					</a>
+					<a href="#details" class="btn-ghost">
+						<i class="fa fa-info-circle mr-2" aria-hidden="true"></i> Learn More
+					</a>
+				</div>
+			</div>
+
+			<!-- Feature highlights -->
+			<div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+				<div class="glass rounded-2xl p-5">
+					<div class="text-primary text-xl"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+					<h3 class="mt-3 font-semibold text-ink">Instant Access</h3>
+					<p class="mt-1 text-ink/70 text-sm">No downloads. Launch directly in your browser.</p>
+				</div>
+				<div class="glass rounded-2xl p-5">
+					<div class="text-primary text-xl"><i class="fa fa-apple" aria-hidden="true"></i></div>
+					<h3 class="mt-3 font-semibold text-ink">Apple-Inspired UI</h3>
+					<p class="mt-1 text-ink/70 text-sm">Glass effects, gradients, and refined motion.</p>
+				</div>
+				<div class="glass rounded-2xl p-5">
+					<div class="text-primary text-xl"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+					<h3 class="mt-3 font-semibold text-ink">Responsive by Design</h3>
+					<p class="mt-1 text-ink/70 text-sm">Optimized for phones, tablets, and desktops.</p>
+				</div>
+				<div class="glass rounded-2xl p-5">
+					<div class="text-primary text-xl"><i class="fa fa-shield" aria-hidden="true"></i></div>
+					<h3 class="mt-3 font-semibold text-ink">Smooth & Secure</h3>
+					<p class="mt-1 text-ink/70 text-sm">Focused on performance and safe embedding.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Overview -->
+	<section id="overview" class="py-12 sm:py-16">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+			<h2 class="text-2xl sm:text-3xl font-bold text-ink">Overview</h2>
+			<p class="mt-3 text-ink/75 max-w-3xl">
+				Blood Money is a fast-paced action title designed for instant, in-browser play. With a soft pink, Apple-inspired interface, it offers quick entry, smooth interactions, and a modern visual language—glassmorphism, soft shadows, and lively gradients.
+			</p>
+
+			<div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+				<div class="glass rounded-2xl p-5">
+					<p class="text-ink/60 text-sm">Genre</p>
+					<p class="mt-1 font-semibold text-ink">Action, Arcade</p>
+				</div>
+				<div class="glass rounded-2xl p-5">
+					<p class="text-ink/60 text-sm">Platforms</p>
+					<p class="mt-1 font-semibold text-ink">Web (Desktop & Mobile)</p>
+				</div>
+				<div class="glass rounded-2xl p-5">
+					<p class="text-ink/60 text-sm">Game Modes</p>
+					<p class="mt-1 font-semibold text-ink">Single Player</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Play -->
+	<section id="play" class="py-12 sm:py-16 bg-white">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+			<h2 class="text-2xl sm:text-3xl font-bold text-ink">Play Blood Money Online</h2>
+			<p class="mt-3 text-ink/75 max-w-3xl">
+				Ready when you are. The game loads right below—no installs required.
+			</p>
+
+			<div class="mt-6 glass rounded-3xl p-3 sm:p-4">
+				<div class="rounded-2xl overflow-hidden ring-1 ring-black/5 shadow-xl">
+					<div class="aspect-video bg-[#FFE6EF]">
+						<iframe
+							title="Blood Money — Web Game"
+							src="https://bloodmoneygame.com/bloodmoney-game.embed"
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+							allow="fullscreen; autoplay; clipboard-read; clipboard-write; gamepad; encrypted-media"
+							allowfullscreen
+							class="w-full h-full">
+						</iframe>
+					</div>
+				</div>
+				<p class="mt-3 text-xs text-ink/60 text-center">
+					If the game does not load, please refresh or try another browser.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Details -->
+	<section id="details" class="py-12 sm:py-16">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+			<h2 class="text-2xl sm:text-3xl font-bold text-ink">Game Details</h2>
+			<div class="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+				<div class="lg:col-span-7 glass rounded-2xl p-6">
+					<h3 class="font-semibold text-ink">A Quick Introduction</h3>
+					<p class="mt-2 text-ink/75">
+						Step into the world of Blood Money and dive into swift, skill-based encounters. Built for the web, it delivers smooth controls, intuitive UI, and a focused gameplay loop—perfect for short sessions or extended runs.
+					</p>
+					<ul class="mt-4 space-y-2 text-ink/75">
+						<li class="flex items-start gap-2"><i class="fa fa-check text-primary mt-1" aria-hidden="true"></i> Zero-install, instant gameplay</li>
+						<li class="flex items-start gap-2"><i class="fa fa-check text-primary mt-1" aria-hidden="true"></i> Optimized for touch and keyboard</li>
+						<li class="flex items-start gap-2"><i class="fa fa-check text-primary mt-1" aria-hidden="true"></i> Modern UI with refined motion</li>
+					</ul>
+				</div>
+				<div class="lg:col-span-5 glass rounded-2xl p-6">
+					<h3 class="font-semibold text-ink">Specs & Notes</h3>
+					<dl class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+						<div>
+							<dt class="text-ink/60">Best Experience</dt>
+							<dd class="font-medium text-ink mt-1">Latest Chrome/Safari/Edge</dd>
+						</div>
+						<div>
+							<dt class="text-ink/60">Input</dt>
+							<dd class="font-medium text-ink mt-1">Keyboard, Mouse, Touch</dd>
+						</div>
+						<div>
+							<dt class="text-ink/60">Performance</dt>
+							<dd class="font-medium text-ink mt-1">Adaptive to device capability</dd>
+						</div>
+						<div>
+							<dt class="text-ink/60">Privacy</dt>
+							<dd class="font-medium text-ink mt-1">No personal data required to play</dd>
+						</div>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FAQ -->
+	<section id="faq" class="py-12 sm:py-16 bg-white">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+			<h2 class="text-2xl sm:text-3xl font-bold text-ink">FAQ</h2>
+			<div class="mt-6 space-y-3">
+				<details class="glass rounded-xl p-4">
+					<summary class="cursor-pointer font-medium text-ink">Is Blood Money free to play?</summary>
+					<p class="mt-2 text-ink/75">Yes, you can play directly in your browser at no cost.</p>
+				</details>
+				<details class="glass rounded-xl p-4">
+					<summary class="cursor-pointer font-medium text-ink">Do I need to install anything?</summary>
+					<p class="mt-2 text-ink/75">No installation is required. The game runs instantly in modern browsers.</p>
+				</details>
+				<details class="glass rounded-xl p-4">
+					<summary class="cursor-pointer font-medium text-ink">Does it support mobile devices?</summary>
+					<p class="mt-2 text-ink/75">Yes. It’s optimized for both mobile and desktop experiences.</p>
+				</details>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="py-10">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="glass rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+				<p class="text-ink/60 text-sm">&copy; <span id="year"></span> Blood Money. All rights reserved.</p>
+				<div class="flex items-center gap-2">
+					<a class="btn-ghost" href="#overview">Overview</a>
+					<a class="btn-ghost" href="#play">Play</a>
+					<a class="btn-ghost" href="#details">Details</a>
+					<a class="btn-ghost" href="#faq">FAQ</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script>
+		// Year
+		document.getElementById('year').textContent = new Date().getFullYear();
+
+		// Mobile nav toggle
+		const menuBtn = document.getElementById('menuBtn');
+		const mobilePanel = document.getElementById('mobilePanel');
+
+		menuBtn?.addEventListener('click', () => {
+			const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+			menuBtn.setAttribute('aria-expanded', String(!expanded));
+			mobilePanel.classList.toggle('hidden');
+		});
+
+		// Optional: respect dark-mode preference
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			document.documentElement.classList.add('dark');
+		}
+	</script>
+</body>
+</html>
